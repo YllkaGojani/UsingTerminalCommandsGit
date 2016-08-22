@@ -1,0 +1,65 @@
+
+YG@YG-PC MINGW64 ~ (master)
+$ cd desktop
+
+YG@YG-PC MINGW64 ~/desktop (master)
+$ mkdir test
+
+YG@YG-PC MINGW64 ~/desktop (master)
+$ cd test
+
+YG@YG-PC MINGW64 ~/desktop/test (master)
+$ touch index.html style.css commands.txt
+
+YG@YG-PC MINGW64 ~/desktop/test (master)
+$ ls
+commands.txt  index.html  style.css
+
+YG@YG-PC MINGW64 ~/desktop/test (master)
+$ cp index.html index_2.html
+
+YG@YG-PC MINGW64 ~/desktop/test (master)
+$ ls
+commands.txt  index.html  index_2.html  style.css
+
+YG@YG-PC MINGW64 ~/desktop/test (master)
+$ cd ..
+
+YG@YG-PC MINGW64 ~/desktop (master)
+$ mkdir destination
+
+YG@YG-PC MINGW64 ~/desktop (master)
+$ mv text/index_2.html destination/index_2.html
+mv: cannot stat 'text/index_2.html': No such file or directory
+
+YG@YG-PC MINGW64 ~/desktop (master)
+$ mv test/index_2.html destination/index_2.html
+
+YG@YG-PC MINGW64 ~/desktop (master)
+$ cd test
+
+YG@YG-PC MINGW64 ~/desktop/test (master)
+$ rm style.css
+
+YG@YG-PC MINGW64 ~/desktop/test (master)
+$ ls
+commands.txt  index.html
+
+YG@YG-PC MINGW64 ~/desktop/test (master)
+$ cd ..
+
+YG@YG-PC MINGW64 ~/desktop (master)
+$ cd destination
+
+YG@YG-PC MINGW64 ~/desktop/destination (master)
+$ ls
+index_2.html
+
+YG@YG-PC MINGW64 ~/desktop/destination (master)
+$ cd ..
+
+YG@YG-PC MINGW64 ~/desktop (master)
+$ rm -rf destination
+
+YG@YG-PC MINGW64 ~/desktop (master)
+$
